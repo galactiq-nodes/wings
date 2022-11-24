@@ -62,7 +62,8 @@ func (s *Server) handleServerCrash() error {
 
 	// If the system is not configured to detect a clean exit code as a crash, and the
 	// crash is not the result of the program running out of memory, do nothing.
-	if (exitCode == 0 || exitCode == "143" || exitCode == 143) && !oomKilled && !config.Get().System.CrashDetection.DetectCleanExitAsCrash {
+	if (exitCode == 0 || exitCode == 143) && !oomKilled && !config.Get().System.CrashDetection.DetectCleanExitAsCrash {
+
 		s.Log().Debug("server exited with successful exit code; system is configured to not detect this as a crash")
 		return nil
 	}
@@ -70,6 +71,7 @@ func (s *Server) handleServerCrash() error {
 	s.PublishConsoleOutputFromDaemon("---------- Detected server process in a crashed state! ----------")
 	s.PublishConsoleOutputFromDaemon(fmt.Sprintf("Exit code: %d", exitCode))
 	s.PublishConsoleOutputFromDaemon(fmt.Sprintf("Out of memory: %t", oomKilled))
+	s.PublishConsoleOutputFromDaemon(fmt.Sprintf("Clean exit, %d", config.Get().System.CrashDetection.DetectCleanExitAsCrash))
 
 	c := s.crasher.LastCrashTime()
 	timeout := config.Get().System.CrashDetection.Timeout
