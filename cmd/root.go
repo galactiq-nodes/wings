@@ -428,11 +428,14 @@ __ [blue][bold]Pterodactyl[reset] _____/___/_______ _______ ______
         \___/\___/___/___/___/___    /______/
                             /_______/ [bold]%s[reset]
 
-Copyright © 2018 - %d Dane Everitt & Contributors
+Copyright © 2018 - %d Galactiq Hosting, Dane Everitt & Contributors
+This software is not made for distribution, and is not to be used for any
+commercial purposes. If you have obtained this software from an unauthorized
+source, please contact us immediately at [bold] info@galactiq.net
 
-Website:  https://pterodactyl.io
- Source:  https://github.com/pterodactyl/wings
-License:  https://github.com/pterodactyl/wings/blob/develop/LICENSE
+Website:  https://galactiq.net
+ Source:  https://github.com/galactiq-nodes/wings
+License:  https://github.com/galactiq-nodes/wings/blob/develop/LICENSE
 
 This software is made available under the terms of the MIT license.
 The above copyright notice and this permission notice shall be included
