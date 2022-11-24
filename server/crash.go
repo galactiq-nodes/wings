@@ -60,7 +60,7 @@ func (s *Server) handleServerCrash() error {
 		return err
 	}
 
-	ii exitCode == 143 {
+	if exitCode == 143 {
 		s.PublishConsoleOutputFromDaemon("Server has been stopped by the Galactiq Console.")
 		return nil
 	}
