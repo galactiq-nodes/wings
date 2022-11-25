@@ -18,8 +18,6 @@ const (
 	BackupCompletedEvent        = "backup completed"
 	TransferLogsEvent           = "transfer logs"
 	TransferStatusEvent         = "transfer status"
-	ImportStartedEvent          = "import started"
-	ImportCompletedEvent        = "import completed"
 	DeletedEvent                = "deleted"
 )
 
