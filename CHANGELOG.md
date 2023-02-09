@@ -1,5 +1,18 @@
 # Changelog
 
+## v1.11.4
+### Fixed
+* CVE-2023-25168
+
+## v1.11.3
+### Fixed
+* CVE-2023-25152
+
+## v1.11.2
+### Fixed
+* Backups being restored from remote storage (s3) erroring out due to a closed stream.
+* Fix IP validation logic for activity logs filtering out valid IPs instead of invalid IPs
+
 ## v1.11.1
 ### Changed
 * Release binaries are now built with Go 1.18.10
@@ -54,6 +67,14 @@
 * Wings can be run with podman instead of Docker, this is still experimental and not recommended for production use.
 * Archive progress is now reported correctly.
 * Labels for containers can now be set by the Panel.
+
+## v1.7.4
+### Fixed
+* CVE-2023-25168
+
+## v1.7.3
+### Fixed
+* CVE-2023-25152
 
 ## v1.7.2
 ### Fixed
