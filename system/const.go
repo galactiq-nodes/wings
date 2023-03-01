@@ -1,3 +1,3 @@
 package system
 
-var Version = "GALACTIQ-V1.11.4"
+var Version = "GALACTIQ-V1.11.5"
